@@ -1,0 +1,212 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: #f2f2f2;
+  color: #fff;
+  display: flex;
+  min-height: 100vh;
+}
+
+.container {
+  margin: auto;
+  width: 1200px;
+  max-width: 97%;
+}
+
+/* Cards */
+
+.cards {
+  min-height: 600px;
+  display: flex;
+  flex: 1 1 33.3%;
+  background-color: rgba(226, 134, 37, 1);
+  transition: all 0.5s ease-in-out;
+}
+
+/* Image */
+.img {
+  margin: 48px;
+  animation: moveInLeft 1s ease-out;
+}
+
+/* Heading */
+.heading {
+  font-family: "Big Shoulders Display", sans-serif;
+  font-size: 48px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin: 48px;
+  animation: moveInLeft 1s ease-out;
+}
+
+/* Paragraph */
+.para {
+  font-family: "Lexend Deca", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 17px;
+  line-height: 25px;
+  margin: 48px;
+  margin-bottom: 85px;
+  animation: moveInLeft 1s ease-out;
+}
+
+/* Buttons */
+a {
+  background-color: #f2f2f2;
+  text-decoration: none;
+  padding: 1.5rem 4rem;
+  border-radius: 30px;
+  font-size: 18px;
+  margin: 48px;
+  padding: 15px 40px;
+}
+
+.btn-orange {
+  color: rgba(226, 134, 37, 1);
+  transition: all 0.3s ease-in-out;
+}
+
+.btn-blue {
+  color: rgba(0, 105, 113, 1);
+  transition: all 0.3s ease-in-out;
+}
+
+.btn-green {
+  color: rgba(0, 65, 64, 1);
+  transition: all 0.3s ease-in-out;
+}
+
+/* Button Hover */
+
+.btn-orange:hover {
+    color: #fff;
+    border: 1px solid #fff;
+    background-color: #a40606;
+    background-image: linear-gradient(315deg, #a40606 0%, #d98324 74%);
+}
+
+.btn-blue:hover {
+    color: #fff;
+    border: 1px solid #fff;
+    background-color: #7f5a83;
+    background-image: linear-gradient(315deg, #7f5a83 0%, #0d324d 74%);   
+}
+
+.btn-green:hover {
+    color: #fff;
+    border: 1px solid #fff;
+    background-color: #63d471;
+    background-image: linear-gradient(315deg, #63d471 0%, #233329 74%);
+}
+
+/* Crds color */
+
+.card-yellow {
+    transition: all 0.5s ease-in-out;
+} 
+
+.card-blue {
+  background-color: rgba(0, 105, 113, 1);
+  transition: all 0.5s ease-in-out;
+}
+
+.card-green {
+  background-color: rgba(0, 65, 64, 1);
+  transition: all 0.5s ease-in-out;
+}
+
+/* Card Hover */
+
+.cards:hover{
+    box-shadow: 0 6px 6px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.card-yellow:hover {
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: #a40606;
+    background-image: linear-gradient(315deg, #a40606 0%, #d98324 74%);
+    transform: perspective(500px) translateZ(15px);
+}
+
+.card-blue:hover {
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: #7f5a83;
+    background-image: linear-gradient(315deg, #7f5a83 0%, #0d324d 74%); 
+    transform: perspective(500px) translateZ(15px);
+}
+
+.card-green:hover {
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: #63d471;
+    background-image: linear-gradient(315deg, #63d471 0%, #233329 74%);
+    transform: perspective(500px) translateZ(15px);
+}
+
+/* Animations */
+
+@keyframes moveInLeft {
+    0% {
+      opacity: 0;
+      transform: translateX(-3rem);
+    }
+  
+    100% {
+      opacity: 1;
+      transform: translate(0);
+    }
+}
+
+/* Queries */
+@media (max-width: 810px) {
+    html { font-size: 55%; }
+
+    .cards {
+        display: flex;
+        flex-direction: column;
+        max-width: 60%;
+        margin: 150px;
+        border-radius: 10px;
+    }
+    .card-yellow {
+        height: 550px;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+    .card-blue {
+        height: 550px;
+    }
+    .card-green {
+        height: 550px;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+}
+
+@media (max-width: 600px) {
+    html { font-size: 55%; }
+
+   .heading {
+       font-size: 36px;
+   }
+   .para {
+       font-size: 15px;
+   }
+   a {
+       font-size: 14px;
+       margin: 50px;
+       padding: 15px 30px;
+   }
+}
