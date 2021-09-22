@@ -127,16 +127,13 @@ a {
 
 /* Card Hover */
 
-.cards:hover{
-    box-shadow: 0 6px 6px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-
 .card-yellow:hover {
     border-radius: 10px;
     cursor: pointer;
     background-color: #a40606;
     background-image: linear-gradient(315deg, #a40606 0%, #d98324 74%);
     transform: perspective(500px) translateZ(15px);
+    box-shadow: 0 10px 6px 0 rgba(0, 0, 0, 0.2), 0 10px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .card-blue:hover {
@@ -145,6 +142,7 @@ a {
     background-color: #7f5a83;
     background-image: linear-gradient(315deg, #7f5a83 0%, #0d324d 74%); 
     transform: perspective(500px) translateZ(15px);
+    box-shadow: 0 10px 6px 0 rgba(0, 0, 0, 0.2), 0 10px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .card-green:hover {
@@ -153,6 +151,7 @@ a {
     background-color: #63d471;
     background-image: linear-gradient(315deg, #63d471 0%, #233329 74%);
     transform: perspective(500px) translateZ(15px);
+    box-shadow: 0 10px 6px 0 rgba(0, 0, 0, 0.2), 0 10px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 /* Animations */
