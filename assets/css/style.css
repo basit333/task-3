@@ -64,8 +64,9 @@ body {
   font-family: "Lexend Deca", sans-serif;
   font-style: normal;
   font-weight: normal;
-  font-size: 17px;
+  font-size: 15px;
   line-height: 25px;
+  opacity: 0.75;
   margin-bottom: 83px;
   animation: moveInLeft 1s ease-out;
 }
@@ -76,10 +77,11 @@ a,
   display: inline-block;
   background-color: #f2f2f2;
   text-decoration: none;
-  padding: 1.5rem 4rem;
   border-radius: 30px;
-  font-size: 18px;
-  padding: 15px 40px;
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 15px;
+  padding: 10px 40px;
+  border: 1px solid rgba(255, 255, 255, 0);
 }
 
 .btn-orange {
