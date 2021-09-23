@@ -184,12 +184,13 @@ a,
 /* Queries */
 @media (max-width: 810px) {
     html { font-size: 55%; }
-
+    body { padding: 10px;}
+    
     .cards {
         display: flex;
         flex-direction: column;
         max-width: 60%;
-        margin: 150px;
+        margin: auto;
         border-radius: 10px;
     }
     .card-yellow {
