@@ -18,23 +18,34 @@ body {
 
 .container {
   margin: auto;
-  width: 1200px;
+  width: 1000px;
   max-width: 97%;
 }
 
 /* Cards */
 
 .cards {
-  min-height: 600px;
   display: flex;
   flex: 1 1 33.3%;
   background-color: rgba(226, 134, 37, 1);
   transition: all 0.5s ease-in-out;
 }
 
+/* Cards-padding */
+
+.card-yellow{
+  padding: 48px;
+}
+.card-blue{
+  padding: 48px;
+}
+.card-green{
+  padding: 48px;
+}
+
 /* Image */
 .img {
-  margin: 48px;
+  margin-bottom: 35px;
   animation: moveInLeft 1s ease-out;
 }
 
@@ -44,7 +55,7 @@ body {
   font-size: 48px;
   font-weight: bold;
   text-transform: uppercase;
-  margin: 48px;
+  margin-bottom: 25px;
   animation: moveInLeft 1s ease-out;
 }
 
@@ -55,19 +66,19 @@ body {
   font-weight: normal;
   font-size: 17px;
   line-height: 25px;
-  margin: 48px;
-  margin-bottom: 85px;
+  margin-bottom: 83px;
   animation: moveInLeft 1s ease-out;
 }
 
 /* Buttons */
-a {
+a,
+.btn {
+  display: inline-block;
   background-color: #f2f2f2;
   text-decoration: none;
   padding: 1.5rem 4rem;
   border-radius: 30px;
   font-size: 18px;
-  margin: 48px;
   padding: 15px 40px;
 }
 
@@ -180,15 +191,10 @@ a {
         border-radius: 10px;
     }
     .card-yellow {
-        height: 550px;
         border-top-left-radius: 10px;
         border-top-right-radius: 10px;
     }
-    .card-blue {
-        height: 550px;
-    }
     .card-green {
-        height: 550px;
         border-bottom-left-radius: 10px;
         border-bottom-right-radius: 10px;
     }
@@ -205,7 +211,5 @@ a {
    }
    a {
        font-size: 14px;
-       margin: 50px;
-       padding: 15px 30px;
    }
 }
